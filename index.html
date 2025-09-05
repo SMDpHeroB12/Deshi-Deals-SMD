@@ -50,21 +50,28 @@
         class="promo-code flex flex-col md:flex-row justify-center items-center mt-5 gap-2 md:gap-10"
       >
         <p class="font-medium">Use Promo Code</p>
-        <button class="btn bg-[#E527B2] text-white px-14 py-6">SELL200</button>
+        <button
+          class="btn bg-[#E527B2] hover:bg-[#E527B290] text-white px-14 py-6"
+        >
+          SELL200
+        </button>
       </div>
       <div class="hero-image flex justify-center">
         <img src="./assets/hero-bg.png" alt="Hero-Background" />
       </div>
     </section>
-    <main class="py-40 bg-linear-to-t from-[#f1f1f1] to-[#fff]">
+    <section
+      class="bg-solver bg-linear-to-t from-[#f7f7f7] to-[#fff] h-8"
+    ></section>
+    <main class="py-40 bg-linear-to-t from-[#f1f1f1] to-[#f7f7f7]">
       <section
         id="product-container"
-        class="w-11/12 mx-auto grid grid-cols-12 gap-10"
+        class="w-11/12 mx-auto md:grid grid-cols-12 gap-10"
       >
         <section id="products-section" class="col-span-9">
           <div class="kitchenware">
             <h1 class="text-2xl font-semibold mb-4">Kitchenware</h1>
-            <div class="boxs grid grid-cols-3 gap-5">
+            <div class="boxs md:grid grid-cols-3 gap-5">
               <!-- cards -->
 
               <!-- Kitchen Card-1 -->
@@ -157,7 +164,7 @@
           </div>
           <div class="sportsware mt-5">
             <h1 class="text-2xl font-semibold mb-4">Sportsware</h1>
-            <div class="boxs grid grid-cols-3 gap-5">
+            <div class="boxs md:grid grid-cols-3 gap-5">
               <!-- cards -->
 
               <!-- Sports Card-1 -->
@@ -250,7 +257,7 @@
           </div>
           <div class="Furniture mt-5">
             <h1 class="text-2xl font-semibold mb-4">Furniture</h1>
-            <div class="boxs grid grid-cols-3 gap-5">
+            <div class="boxs md:grid grid-cols-3 gap-5">
               <!-- cards -->
 
               <!-- Furniture Card-1 -->
@@ -342,13 +349,40 @@
             </div>
           </div>
         </section>
-        <aside
-          id="cart-section"
-          class="bg-white col-span-3 shadow-md rounded-lg"
-        >
-          <h1>Cart</h1>
+
+        <!-- Cart Section starts here -->
+        <aside id="cart-section" class="col-span-3">
+          <div class="cart bg-white rounded-lg p-5 mt-12">
+            <h2 class="font-semibold mb-3">Have a Coupon?</h2>
+
+            <div class="join w-full">
+              <input class="input join-item" placeholder="Coupon code" />
+              <button
+                class="btn join-item rounded-r-lg bg-[#E527B2] hover:bg-[#E527B290] text-white"
+              >
+                Apply
+              </button>
+            </div>
+          </div>
+          <div class="cart-box mt-10 bg-white">
+            <h3 class="font-semibold text-center text-2xl py-5">Cart</h3>
+            <div class="" id="cart-container"></div>
+            <hr />
+            <div class="p-5">
+              <h2>Total Price: <span id="total-price">0</span> TK</h2>
+              <h2>Total Quantity: <span id="total-qty">0</span> Items</h2>
+              <button
+                class="btn w-full bg-[#E527B2] hover:bg-[#E527B290] text-white"
+              >
+                Make Purchase
+              </button>
+            </div>
+          </div>
         </aside>
       </section>
     </main>
+
+    <!-- Scripts here -->
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
