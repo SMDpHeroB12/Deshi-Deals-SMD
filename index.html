@@ -335,10 +335,13 @@
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                   </div>
-                  <h2 class="card-title">Flexible Sofa</h2>
-                  <p class="text-[#1111117f]">339.00 <span>TK</span></p>
+                  <h2 id="cart-title-last" class="card-title">Flexible Sofa</h2>
+                  <p class="text-[#1111117f]">
+                    <span id="cart-price-last">339.00</span>TK
+                  </p>
                   <div class="card-actions w-[90%]">
                     <button
+                      id="cart-btn-last"
                       class="btn bg-[#E527B2] text-white hover:bg-[#E527B27f] w-full"
                     >
                       Add To Cart
@@ -366,6 +369,7 @@
           </div>
           <div class="cart-box mt-10 bg-white">
             <h3 class="font-semibold text-center text-2xl py-5">Cart</h3>
+            <!-- cart items here -->
             <div class="" id="cart-container"></div>
             <hr />
             <div class="p-5">
